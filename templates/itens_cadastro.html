@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block index %}
+<h1>Cadastro Itens</h1>
+
+<form action="/item/salvar" method="POST">
+    <div class='cadastro_itens_in'>
+        <a href="/cadastro_itens">
+            <div class="nome_item">
+                <input placeholder="Nome" type="text" name="nome">
+            </div>
+            <div class="quantidade">
+                <input placeholder="Quantidade" type="text" name="quantidade">
+            </div>
+            <div class="button_in">
+                <input type="submit" value="Salve">
+            </div>
+        </a>
+    </div>
+</form>
+
+
+
+
+
+
+
+{% endblock %}

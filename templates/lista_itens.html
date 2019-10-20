@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% block index %}
+
+<h1>Lista Itens</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>quantidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in lista %}
+
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.nome}}</td>
+            <td>{{i.quantidade}}</td>
+            <td>
+                <a href="/item/delete?id={{i.id}}">Deletar</a>                
+            </td>
+
+        </tr>
+        {% endfor %}
+
+    </tbody>
+
+
+
+
+</table>
+
+
+
+{% endblock %}

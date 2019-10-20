@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block index %}
+
+<h1>Clientes Alterar!</h1>
+<a href="/lista_usuario">Listagem</a>
+
+<div class= "formulario">
+    <form action="/usuario/alterar/salvar" method="POST"> 
+        <input type="hidden" name="id" value="{{usuario.id}}">
+        <input class="input" type="text" placeholder="nome" name="nome" value="{{usuario.nome}}" >
+        <input class="input" type="text" placeholder="cep" name="cep" value="{{usuario.cep}}"> 
+        <input class="input" type="text" placeholder="cpf" name="cpf" value="{{usuario.cpf}}">
+        <input class="input" type="text" placeholder="endereco" name="endereco" value="{{usuario.endereco}}">
+        <input class="input" type="text" placeholder="cartao" name="cartao" value="{{usuario.cartao}}">
+        <input class="input" type="text" placeholder="validade" name="validade" value="{{usuario.validade}}">
+        <input class="input" type="text" placeholder="codigo" name="codigo" value="{{usuario.codigo}}">
+        <input type="submit" value="salvar">        
+    </form>
+
+</div>
+
+
+
+{% endblock %}

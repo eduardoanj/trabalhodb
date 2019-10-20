@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block index %}
+<h1>Cadastro</h1>
+<div class="cadastro">
+
+    <form action="/usuario/salvar" method="POST">
+        <div class="nome">
+            <input placeholder="Nome" type="text" name="nome">
+        </div>
+        <div class="cep">
+            <input placeholder="CEP" type="text" name="cep">
+        </div>
+        <div class="cpf">
+            <input placeholder="CPF" type="text" name="cpf">
+        </div>
+        <div class="endereco">
+            <input placeholder="Endereço" type="text" name="endereco">
+        </div>
+        <div class="cartao">
+            <input placeholder="Cartão de crédito" type="text" name="cartao">
+        </div>
+        <div class="validade">
+            <input placeholder="Validade" type="text" name="validade">
+        </div>
+        <div class="codigo">
+            <input placeholder="Codigo de segurança" type="text" name="codigo">
+        </div>
+        <div class="button">
+            <input type="submit" value="Salve">
+        </div>
+    </form>
+
+
+
+</div>
+
+
+
+{% endblock %}

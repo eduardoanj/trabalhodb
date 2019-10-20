@@ -1,0 +1,153 @@
+body{
+    width: 100%;
+    height: 100%; 
+    background-image: url(../static/background.png); 
+    margin: 0;
+    padding: 0;  
+    background-size: 100%;
+    
+}
+.cabecalho{
+    /* background-color: #252323; */
+    background-image: url(../static/galera.png);
+}
+.logo img{
+    max-width: 200px;
+    max-height: 150px;
+    padding: 0px 0px 0px 4em;
+}    
+.cabecalho_2{
+    background-color: rgb(141, 138, 156);
+    height: 3em;
+    width: 100%;
+}
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 20px;
+    height: 50px;
+}
+.menu ul li:hover{
+    border-bottom: 2px solid #ffffff;
+}
+.menu ul li a:hover{
+    color: #ffffff;
+}
+.menu ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu{
+    width: 70%;
+    float: left;
+}
+.busca{
+    width: 30%;
+    float: right;   
+}
+.busca input{
+    background-image: url(../static/Sem\ Título-1.png);
+    background-repeat: no-repeat;
+    margin-top: 13px;
+    height: 30px;
+    padding: 13px;
+    background-position: 96%;
+    border: 3px solid #1c73f5;
+}
+.menu_urls{
+    border-bottom: 6px solid #000000;
+}
+.cabecalho_2{
+    padding: 20px;
+}
+.cadastro{
+    margin-left: 122px;
+    width: 35%;
+}
+h1{
+    margin-left: 122px;
+}
+.nome{
+    padding-top: 10px;
+   
+
+}
+.cadastro input{
+    border: none;
+    width: 100%;
+    height:30px;
+    border-radius: 10px;
+    border: 3px solid #1c73f5;
+}
+.cep{
+    padding-top: 10px;
+}
+.cpf{
+    padding-top: 10px;
+}
+.endereco{
+    padding-top: 10px;
+}
+.cartao{
+    padding-top: 10px;
+}
+.validade{
+    padding-top: 10px;
+}
+.codigo{
+    padding-top: 10px;
+}
+.button input{
+    width: 15%;
+    padding-top: 10px;
+    background-color: #1c73f5;
+}
+.button input:hover{
+    border: 2px solid #ffffff;
+    background-color: rgb(141, 138, 156); 
+}
+.nome_item{
+    padding-top: 10px;
+}
+.quantidade{
+    padding-top: 10px;
+}
+.cadastro_itens{
+    margin-left: 122px;
+    margin-top: 3em;
+}
+.cadastro_itens_in input{
+    border: none;
+    width: 35%;
+    height:30px;
+    border-radius: 10px;
+    border: 3px solid #1c73f5;
+}
+.button_in{
+    width: 15%;
+
+}
+.button_in :hover{
+    border: 2px solid #ffffff;
+    background-color: rgb(141, 138, 156); 
+}
+################# tabelas #####################
+.tabela1{
+    margin: 2em auto;
+    border-collapse: collapse;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+}
+.tabela1 thead tr th{
+    padding: 0.6em 1em;
+    background: #000000;
+    color: #fff
+}
+.tabela tbody tr td{
+    padding: 0.5em 1.2em;
+
+}

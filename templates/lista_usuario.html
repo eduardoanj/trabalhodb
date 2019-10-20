@@ -1,0 +1,47 @@
+{% extends "index.html" %}
+{% block index %}
+
+<h1>Lista usuarios</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nome</th>
+            <th>cep</th>
+            <th>cpf</th>
+            <th>endereço</th>
+            <th>cartao</th>
+            <th>validade</th>
+            <th>cod segurança</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in lista %}
+
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.nome}}</td>
+            <td>{{i.cep}}</td>
+            <td>{{i.cpf}}</td>
+            <td>{{i.endereco}}</td>
+            <td>{{i.cartao}}</td>
+            <td>{{i.validade}}</td>
+            <td>{{i.codigo}}</td>
+            <td>
+                <a href="/usuario/delete?id={{i.id}}">Deletar</a>
+                <a href="/usuario/alterar?id={{i.id}}">Alterar</a>
+            </td>
+
+        </tr>
+        {% endfor %}
+
+    </tbody>
+
+
+
+
+</table>
+
+
+{% endblock %}
